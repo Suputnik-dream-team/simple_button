@@ -7,7 +7,11 @@
   <body>
     
   <h1>Просто бомбічєский мінімалізм</h1>
-  <input type="file" id="input" multiple>
   <script src="main.js"></script>
+    <body onload="updateSize();">
+    <form name="uploadForm">
+    <p><input id="uploadInput" type="file" name="myFiles" onchange="updateSize();" multiple> selected files: <span id="fileNum">0</span>; total size: <span id="fileSize">0</span></p>
+    <p><input type="submit" value="Send file"></p>
+    </form>
   </body>
 </html>
